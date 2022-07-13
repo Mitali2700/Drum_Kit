@@ -10,58 +10,63 @@ var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 for(var i=0; i<numberOfDrumButtons; i++){
 
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
-        // alert("I got clicked!");
-        //console.log(this.style.color="white");
-
+       
         var buttonInnerHTML= this.innerHTML;
 
-        switch (buttonInnerHTML) {
-            case "w":
-                var audio = new Audio("sounds/tom-1.mp3");
-                audio.play();
-                break;
-            
-            case "a":
-                var audio = new Audio("sounds/tom-2.mp3");
-                audio.play();
-                break;
-
-            case "s":
-                var audio = new Audio("sounds/tom-3.mp3");
-                audio.play();
-                break;
-
-            case "d":
-                var audio = new Audio("sounds/tom-4.mp3");
-                audio.play();
-                break; 
-
-            case "j":
-                var audio = new Audio("sounds/snare.mp3");
-                audio.play();
-                break;    
-                
-            case "k":
-                var audio = new Audio("sounds/crash.mp3");
-                audio.play();
-                break;
-
-            case "l":
-                    var audio = new Audio("sounds/kick.mp3");
-                    audio.play();
-                    break;
-            default:
-                break;
-        }
+        makeSound(buttonInnerHTML);
+        
     });
 }
-
 
 // var audio = new Audio("sounds/crash.mp3");
 //         audio.play();
 
-document.addEventListener("keypress", function(){
-    alert("Key was Pressed!");
+
+//Detecting Keyboard Press
+
+document.addEventListener("keypress", function(event){
+    //alert("Key was Pressed!");
+    makeSound(event.key);
 });
 //You can add an event listener to the entire document, so that the entire web page starts listening for keyboard strokes.
 
+function makeSound(key){
+    switch (key) {
+        case "w":
+            var audio = new Audio("sounds/tom-1.mp3");
+            audio.play();
+            break;
+        
+        case "a":
+            var audio = new Audio("sounds/tom-2.mp3");
+            audio.play();
+            break;
+
+        case "s":
+            var audio = new Audio("sounds/tom-3.mp3");
+            audio.play();
+            break;
+
+        case "d":
+            var audio = new Audio("sounds/tom-4.mp3");
+            audio.play();
+            break; 
+
+        case "j":
+            var audio = new Audio("sounds/snare.mp3");
+            audio.play();
+            break;    
+            
+        case "k":
+            var audio = new Audio("sounds/crash.mp3");
+            audio.play();
+            break;
+
+        case "l":
+                var audio = new Audio("sounds/kick.mp3");
+                audio.play();
+                break;
+        default:
+            break;
+    }
+}
