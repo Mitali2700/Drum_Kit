@@ -59,3 +59,9 @@ for(var i=0; i<numberOfDrumButtons; i++){
 
 // var audio = new Audio("sounds/crash.mp3");
 //         audio.play();
+
+document.addEventListener("keypress", function(){
+    alert("Key was Pressed!");
+});
+//You can add an event listener to the entire document, so that the entire web page starts listening for keyboard strokes.
+
