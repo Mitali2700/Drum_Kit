@@ -15,6 +15,7 @@ for(var i=0; i<numberOfDrumButtons; i++){
 
         makeSound(buttonInnerHTML);
         
+        buttonAnimation(buttonInnerHTML)
     });
 }
 
@@ -27,6 +28,7 @@ for(var i=0; i<numberOfDrumButtons; i++){
 document.addEventListener("keypress", function(event){
     //alert("Key was Pressed!");
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
 //You can add an event listener to the entire document, so that the entire web page starts listening for keyboard strokes.
 
@@ -73,4 +75,10 @@ function makeSound(key){
 
     }
 
+}
+
+function buttonAnimation(currentKey){
+
+    document.querySelector("."+currentKey);
+    activeButton.classList.add("pressed");
 }
