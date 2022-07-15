@@ -1,6 +1,8 @@
-# 🥁 DRUM KIT 
-
-
+ 
+<h1 align="center">🥁 DRUM KIT<h1>
+<br/>
+  
+# Technologies and Tools:
 
 
 <br/>
