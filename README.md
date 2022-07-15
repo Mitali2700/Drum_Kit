@@ -1,5 +1,8 @@
  
-<h1 align="center">🥁 DRUM KIT<h1>
+<h1 align="center">🥁 DRUM KIT</h1>
+
+<h4 align = "center">Drum Kit is an instrumental game for playing euphonious sound.</h4>
+
 <br/>
   
 # Technologies and Tools:
