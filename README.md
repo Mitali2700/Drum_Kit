@@ -16,6 +16,4 @@
 
 ![drumkit](https://user-images.githubusercontent.com/78539161/179214069-824e0428-3a2f-4d80-b578-cab24b16b515.png)
 
-![htmlcssjs]()
-
 
